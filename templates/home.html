@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}" />
+  </head>
+  <body>
+    <header>
+      <div class="flex justify-between py-4 px-2 max-w-7xl">
+        <p>Django Blog</p>
+        <div class="">
+          <a
+            class="py-2 px-4 border-2 border-green-600 bg-green-200 mr-2"
+            href="/login"
+            >Login</a
+          >
+          <a
+            class="py-2 px-4 border-2 border-yellow-600 bg-yellow-200"
+            href="/register"
+            >Register</a
+          >
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
